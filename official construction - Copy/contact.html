@@ -8,203 +8,193 @@
 
       <style>
           *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins",sans-serif;
-  }
-  body{
-      background-color: rgb(158, 193, 190);
-  }
-  .container{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    background-color: rgb(158, 193, 190);
-    
+              padding: 0;
+              margin: 0;
+              box-sizing: border-box;
+              font-family: "Poppins",sans-serif;
+            }
+        body{
+              background-color: rgb(158, 193, 190);
+             }
+        .container{
+                    height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 12px;
+                    background-color: rgb(158, 193, 190);
+                  }
+       .main-box{
+                 display: flex;
+                flex-direction: row;
+                height: 60%;
+                width:500px;
+                background-color: white;
+                border-radius:8px;
+                z-index:100;
+             }
   
-  }
-  .main-box{
-    display: flex;
-    flex-direction: row;
-    height: 60%;
-    width:500px;
-    background-color: white;
-    border-radius:8px;
-    z-index:100;
-  }
+      .contactIcons{
+                    width: 130px;
+                    height: 100%;
+                    background-color:white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap:15px;
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                    padding: 25px 12px;
+                   }
+      .contactIcons p{
+                      font-size: 7px;
+                      color:rgb(183, 177, 177);
+                    }
+      .contactIcons h5{
+                       font-size: 11px;
+                      }
+      .contactIcons i{
+                      font-size: 20px;
+                      color: rgb(16, 16, 137);
+                      }
+      .address{
+               text-align: center;
+              }
+      .phone{
+              text-align: center;
+            }
+      .email{
+              text-align: center;
+            }
   
-  .contactIcons{
-    width: 130px;
-    height: 100%;
-    background-color:white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:15px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    padding: 25px 12px;
-  }
-  .contactIcons p{
-    font-size: 7px;
-    color:rgb(183, 177, 177);
-  }
-  .contactIcons h5{
-    font-size: 11px;
-  }
-  .contactIcons i{
-    font-size: 20px;
-    color: rgb(16, 16, 137);
-  }
-  .address{
-    text-align: center;
-  }
-  .phone{
-    text-align: center;
-  }
-  .email{
-    text-align: center;
-  }
+      .verticalLine{
+                    height:150px;
+                    background-color:rgb(214, 206, 206);
+                    width:3px;
+                    position: relative;
+                    top: 60px;
+                    }
   
-  .verticalLine{
-    height:150px;
-    background-color:rgb(214, 206, 206);
-    width:3px;
-    position: relative;
-    top: 60px;
-  }
+      .sendMsg{
+                padding: 25px 25px;
+              }
+      .text h5{
+                font-size:18px;
+                color: rgb(16, 16, 181);
+              }
+      .text p{
+              font-size:12px;
+              color:rgb(109, 107, 107);
+              font-weight: 500;
+              margin-top: 2px;
+              }
+      .form-box{
+                margin-top:7px;
+              }
+      .name input{
+                  outline: none;
+                  border: none;
+                  background-color: rgb(245, 245, 245);
+                  padding:8px 6px;
+                  font-size: 11px;
+                  width: 100%;
+                }
+     .name input::placeholder{
+                               color: rgb(168, 168, 168);
+                            }
+     .email{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            }
+     .email input{
+                  outline: none;
+                  border: none;
+                  background-color: rgb(245, 245, 245);
+                  padding:8px 6px;
+                  font-size: 11px;
+                  width: 100%;
+                  }
+      .email input::placeholder{
+                                color: rgb(168, 168, 168);
+                                }
+       .textarea{
+                  text-align: left;
   
-  .sendMsg{
-    padding: 25px 25px;
-  }
-  .text h5{
-    font-size:18px;
-    color: rgb(16, 16, 181);
-  }
-  .text p{
-    font-size:12px;
-    color:rgb(109, 107, 107);
-    font-weight: 500;
-    margin-top: 2px;
-  }
-  .form-box{
-    margin-top:7px;
-  }
-  .name input{
-    outline: none;
-    border: none;
-    background-color: rgb(245, 245, 245);
-    padding:8px 6px;
-    font-size: 11px;
-    width: 100%;
-  }
-  .name input::placeholder{
-    color: rgb(168, 168, 168);
-  }
-  .email{
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .email input{
-    outline: none;
-    border: none;
-    background-color: rgb(245, 245, 245);
-    padding:8px 6px;
-    font-size: 11px;
-    width: 100%;
-  }
-  .email input::placeholder{
-    color: rgb(168, 168, 168);
-  }
-  .textarea{
-    text-align: left;
+                }
+        .textarea textarea{
+                            outline: none;
+                            border: none;
+                            background-color: rgb(245, 245, 245);
+                            padding:8px 6px;
+                            font-size: 11px;
+                            width: 100%;
+                            height: 55px;
+                            margin-bottom: 2px;
+                            text-decoration: none;   
+                            }
+        .textarea textarea::placeholder{
+                                        color: rgb(168, 168, 168);
+                                        }
+        .sendBtn input{
+                        outline: none;
+                        border: none;
+                        color: white;
+                        font-size: 11px;
+                        padding: 3px 6px;
+                        border-radius: 2px;
+                        background-color: rgb(16, 16, 137);
+                        }
+   
   
-  }
-  .textarea textarea{
-    outline: none;
-    border: none;
-    background-color: rgb(245, 245, 245);
-    padding:8px 6px;
-    font-size: 11px;
-    width: 100%;
-    height: 55px;
-    margin-bottom: 2px;
-    text-decoration: none;
-    
-  }
-  .textarea textarea::placeholder{
-    color: rgb(168, 168, 168);
-  }
-  .sendBtn input{
-    outline: none;
-    border: none;
-    color: white;
-    font-size: 11px;
-    padding: 3px 6px;
-    border-radius: 2px;
-    background-color: rgb(16, 16, 137);
-  }
+        @media (max-width:550px) {
+                                  .main-box{
+                                  flex-direction:column-reverse;
+                                  height:auto;
+                                  }
+        .contactIcons{
+                      flex-direction: row;
+                      flex-wrap: wrap;
+                      width:100%;
+                      height: 100%;
+                      background-color:white;
+                      align-items: center;
+                      justify-content:space-around;
+                      border-top-left-radius: 0;
+                      border-bottom-left-radius:0;
+                      margin-top: -55px;
+                     }    
+       .verticalLine{
+                      display: none;
+                    }
   
+       .sendMsg{
+                margin-bottom: 30px;
+                }
+            }
   
-  
-  @media (max-width:550px) {
-    .main-box{
-      flex-direction:column-reverse;
-      height:auto;
-    }
-    .contactIcons{
-      flex-direction: row;
-      flex-wrap: wrap;
-      width:100%;
-      height: 100%;
-      background-color:white;
-      align-items: center;
-      justify-content:space-around;
-      border-top-left-radius: 0;
-      border-bottom-left-radius:0;
-      margin-top: -55px;
-    }
-  
-    
-  .verticalLine{
-    display: none;
-  }
-  
-  .sendMsg{
-    margin-bottom: 30px;
-  }
-  }
-  
-  .link{
-      background:#ecf0f3;
-      
-      
-      margin-top:30px;
-      padding:10px 30px;
-      display:inline;
-      justify-content:center ;
-      align-items:center ;
-      border-radius:10px;
-      position:relative ;
-      bottom:120px;
-      left:30%;
-      z-index:0;
-      
-      padding-top:15px;
-  }
-  .link a{
-      color:red;
-      text-decoration:none;
-      font-size:22px;
-      font-weight:900;
-      width:100%;
-      height:100%;
-      
-  }
-      </style>
+        .link{
+              background:#ecf0f3;
+              margin-top:30px;
+              padding:10px 30px;
+              display:inline;
+              justify-content:center ;
+              align-items:center ;
+              border-radius:10px;
+              position:relative ;
+              bottom:120px;
+              left:30%;
+              z-index:0; 
+              padding-top:15px;
+              }
+        .link a{
+                color:red;
+                text-decoration:none;
+                font-size:22px;
+                font-weight:900;
+                width:100%;
+                height:100%;     
+                }
+        </style>
   </head>
 
 
