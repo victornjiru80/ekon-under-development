@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Contact us form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+      <style>
+          
+      </style>
+  </head>
+
+
 <body>
-    <h2>contact us on;</h2>
+
+
+  <div class="container">
+    <div class="main-box">
+      <div class="contactIcons">
+       
+        <div class="address">
+            <i class='bx bxs-location-plus'></i>
+            <h5>Address</h5>
+            <p>myaddress.com</p>
+        </div>
+
+        <div class="phone">
+            <i class='bx bxs-phone'></i>
+            <h5>Phone</h5>
+            <p>+254700000000</p>
+        </div>
+
+
+        <div class="email">
+          <i class='bx bxs-envelope'></i>
+          <h5>Email</h5>
+          <p>contactus@gmail.com</p>
+        </div>
+
+    </div>
+      
+       <div class="verticalLine"> 
+        
+
+       </div>
+      <div class="sendMsg">
+        <div class="text">
+          <h5>Send us a message</h5>
+          <p>
+            if you have any work for our company or any type of queries related to our projects you can send us a message from here. It will be our pleasure to assist you in any way possible.
+          </p>
+        </div>
+
+        <div class="form-box">
+          <form action="">
+            <div class="name">
+              <input type="text" placeholder="Enter your name" required id="name">
+            </div>
+
+            <div class="email">
+              <input type="email" placeholder="Enter your email" required id="email">
+            </div>
+
+            <div class="textarea">
+              <textarea name="" id="" placeholder="Enter your message" id="message"></textarea>
+            </div>
+
+            <div class="sendBtn">
+              <input type="submit" value="Send Now" id="sendMsg">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  
+ 
+
+  <script>
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let message = document.getElementById("message");
+    let sendMsg = document.getElementById("sendMsg");
+
+    sendMsg.addEventListener('click',function(){
+      if(name.value!= "" && email.value!= "" ){
+        confirm("Do you want to submit the form ?")
+        alert("Your Response is submitted Thank you !")
+      }
+    })
+  </script>
+
+
+
 </body>
 </html>
