@@ -21,6 +21,7 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 .header{
     padding: 2rem 7%;
     position: fixed;
@@ -32,6 +33,7 @@ html{
     background: var(--headerbg);
     z-index: 10000;
 }
+
 #logo img{
    
    width: 70px;
