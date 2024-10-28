@@ -88,6 +88,7 @@ html{
     position: relative;
     top: 5rem;
 }
+
 /*
 .background-image ::after{
     content: '';
@@ -111,6 +112,7 @@ html{
     text-align: center;
    
 }
+
 .inner-back-text h1{
     z-index: 100;
     font-size: 40px;
@@ -120,6 +122,7 @@ html{
     text-transform: uppercase;
     text-shadow: 0px 0px 6px black;
 }
+
 .inner-back-text h1 span{
     z-index: 100;
     color: var(--mainclr);
