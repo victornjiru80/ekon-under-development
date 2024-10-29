@@ -55,12 +55,14 @@ html{
 .nav a:hover{
     color: var(--mainclr);
 }
+
 .icon-header div{
     color: white;
     margin-left: 1.5rem;
     font-size: 2rem;
     cursor: pointer;
 }
+
 .icon-header div:hover{
     color: var(--mainclr);
 }
