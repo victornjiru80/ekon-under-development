@@ -74,6 +74,7 @@ html{
 .nav.active{
     top: 100%;
 }
+
 .search-form{
     width: 50%;
     position: absolute;
